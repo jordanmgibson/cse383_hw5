@@ -13,11 +13,11 @@
       <h1>Jordan Gibson</h1>
       <div class="form-group col-5">
          <label for="userids22">UserId</label>
-         <input type="text" class="form-control" name="userids22" id="userids22">
+         <input type="text" class="form-control" name="userids22" id="userids22" required>
          <label for="emails22">Email address</label>
-         <input type="email" class="form-control" name="emails22" id="emails22s22" placeholder="name@example.com">
+         <input type="email" class="form-control" name="emails22" id="emails22s22" placeholder="name@example.com" required>
          <label for="birthYears22">Birth Year</label>
-         <select class="form-control" name="birthYears22" id="birthYears22">
+         <select class="form-control" name="birthYears22" id="birthYears22" required>
             <option value="1960" selected>1960</option>
             <option value="1961">1961</option>
             <option value="1962">1962</option>
@@ -90,45 +90,48 @@
       </div>
       <div class="form-group col-5">
          <label for="mobileDevicess22">How many mobile devices do you own?</label>
-         <select id="mobileDevicess22" class="form-control"  name="mobileDevicess22">
+         <select id="mobileDevicess22" class="form-control"  name="mobileDevicess22" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
          </select>
-         <br>
-         <label for="cses22">Check if you are a CSE Major</label><br>
+         <label for="cses22">Check if you are a CSE Major</label>
          <input type="checkbox" class="form-control" id="cses22" autocomplete="off">
-         <br>
-         <label for="cars22">Check if you own a car</label><br>
+         <label for="cars22">Check if you own a car</label>
          <input type="checkbox" class="form-control" id="cars22" autocomplete="off">
       </div>
       <div class="form-group col-6">
-         <label for="entryYears22">Entry Year:</label><br>
-         <input type="radio" name="entryYears22" id="inlineRadio" value="2016">
-         <label for="inlineRadio1">2016</label><br>
+         <label for="entryYears22">Entry Year:</label>
+         <input type="radio" name="entryYears22" id="inlineRadio" value="2016" required>
+         <label for="inlineRadio1">2016</label>
          <input type="radio" name="entryYears22" id="inlineRadio1" value="2017">
-         <label for="inlineRadio2">2017</label><br>
+         <label for="inlineRadio2">2017</label>
          <input type="radio" name="entryYears22" id="inlineRadio3" value="2018">
-         <label for="inlineRadio3">2018</label><br>
+         <label for="inlineRadio3">2018</label>
          <input type="radio" name="entryYears22" id="inlineRadio4" value="2019">
-         <label for="inlineRadio4">2019</label><br>
+         <label for="inlineRadio4">2019</label>
          <input type="radio" name="entryYears22" id="inlineRadio5" value="2020">
-         <label for="inlineRadio5">2020</label><br>
+         <label for="inlineRadio5">2020</label>
          <input type="radio" name="entryYears22" id="inlineRadio6" value="other">
-         <label for="inlineRadio6">other</label><br>
-         <br>
+         <label for="inlineRadio6">other</label>
          <label for="gradDates22">Graduation Date</label>
-         <input type="date" class="form-control" id="gradDates22" name="gradDates22"><br>
+         <input type="date" class="form-control" id="gradDates22" name="gradDates22">
       </div>
       <div class="form-group col-5">
          <label for="quotes22">Favorite quote</label>
-         <textarea class="form-control" name="quotes22" id="quotes22" rows="3" columns="30"></textarea>
+         <textarea class="form-control" name="quotes22" id="quotes22" rows="5" columns="40" required></textarea>
          <label for="quoteCites22">Cite your quote here</label>
-         <input type"url" id"quoteCites22" name="quoteCites22" placeholder="url"><br>
-         <button class="form-control" type="submit">Submit</button>
+         <input type"url" id"quoteCites22" name="quoteCites22" placeholder="url" required>
+         <button class="form-control" type="submit" name="submit">Submit</button>
+         <input class="form-control" type="reset" name="reset" value="Clear">
          <input type="hidden" name="commands22" value="submit">
       </div>
       <footer>CSE 383-B, Homework 5 Forms/Bootstrap, Due 7 March 2022</footer>
