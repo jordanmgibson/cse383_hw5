@@ -59,7 +59,7 @@ function getVar($name) {
 //connect to DB
 try {
     //connect to DB
-    @$mysqli = new mysqli("localhost","383","FIXME","383");
+    @$mysqli = new mysqli("localhost","383","55gf343asdf","383");
     //
     if ($mysqli->connect_errno) {
     	die("Can't connect to db -> did you update password?");
